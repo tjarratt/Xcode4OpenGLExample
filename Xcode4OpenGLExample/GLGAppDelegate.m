@@ -10,9 +10,17 @@
 
 @implementation GLGAppDelegate
 
-- (void)applicationDidFinishLaunching:(NSNotification *)aNotification
-{
-    // Insert code here to initialize your application
+- (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
+    GLGOpenGLController *controller = [[GLGOpenGLController alloc] initWithWindow: [self window]];
+
+    NSTimer *mainTimer = [NSTimer timerWithTimeInterval: (1.0 / 30.0)
+                                                 target: controller
+                                               selector: @selector(update)
+                                               userInfo: nil
+                                                repeats: YES];
+
+
+    [[NSRunLoop mainRunLoop] addTimer:mainTimer forMode:NSRunLoopCommonModes];
 }
 
 @end

@@ -13,6 +13,9 @@
 		F7D6D7A7178A1477001F2FB0 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = F7D6D7A5178A1477001F2FB0 /* Credits.rtf */; };
 		F7D6D7AA178A1477001F2FB0 /* GLGAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F7D6D7A9178A1477001F2FB0 /* GLGAppDelegate.m */; };
 		F7D6D7AD178A1477001F2FB0 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7D6D7AB178A1477001F2FB0 /* MainMenu.xib */; };
+		F7D6D7B4178A1499001F2FB0 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7D6D7B3178A1499001F2FB0 /* OpenGL.framework */; };
+		F7D6D7B7178A14EA001F2FB0 /* GLGOpenGLController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7D6D7B6178A14EA001F2FB0 /* GLGOpenGLController.m */; };
+		F7D6D7BA178A1722001F2FB0 /* GLGOpenGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = F7D6D7B9178A1722001F2FB0 /* GLGOpenGLView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +32,11 @@
 		F7D6D7A8178A1477001F2FB0 /* GLGAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLGAppDelegate.h; sourceTree = "<group>"; };
 		F7D6D7A9178A1477001F2FB0 /* GLGAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLGAppDelegate.m; sourceTree = "<group>"; };
 		F7D6D7AC178A1477001F2FB0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		F7D6D7B3178A1499001F2FB0 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		F7D6D7B5178A14EA001F2FB0 /* GLGOpenGLController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLGOpenGLController.h; sourceTree = "<group>"; };
+		F7D6D7B6178A14EA001F2FB0 /* GLGOpenGLController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLGOpenGLController.m; sourceTree = "<group>"; };
+		F7D6D7B8178A1722001F2FB0 /* GLGOpenGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLGOpenGLView.h; sourceTree = "<group>"; };
+		F7D6D7B9178A1722001F2FB0 /* GLGOpenGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLGOpenGLView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7D6D7B4178A1499001F2FB0 /* OpenGL.framework in Frameworks */,
 				F7D6D797178A1477001F2FB0 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -46,6 +55,7 @@
 		F7D6D78A178A1477001F2FB0 = {
 			isa = PBXGroup;
 			children = (
+				F7D6D7B3178A1499001F2FB0 /* OpenGL.framework */,
 				F7D6D79C178A1477001F2FB0 /* Xcode4OpenGLExample */,
 				F7D6D795178A1477001F2FB0 /* Frameworks */,
 				F7D6D794178A1477001F2FB0 /* Products */,
@@ -84,7 +94,10 @@
 			children = (
 				F7D6D7A8178A1477001F2FB0 /* GLGAppDelegate.h */,
 				F7D6D7A9178A1477001F2FB0 /* GLGAppDelegate.m */,
-				F7D6D7AB178A1477001F2FB0 /* MainMenu.xib */,
+				F7D6D7B5178A14EA001F2FB0 /* GLGOpenGLController.h */,
+				F7D6D7B6178A14EA001F2FB0 /* GLGOpenGLController.m */,
+				F7D6D7B8178A1722001F2FB0 /* GLGOpenGLView.h */,
+				F7D6D7B9178A1722001F2FB0 /* GLGOpenGLView.m */,
 				F7D6D79D178A1477001F2FB0 /* Supporting Files */,
 			);
 			path = Xcode4OpenGLExample;
@@ -93,6 +106,7 @@
 		F7D6D79D178A1477001F2FB0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F7D6D7AB178A1477001F2FB0 /* MainMenu.xib */,
 				F7D6D79E178A1477001F2FB0 /* Xcode4OpenGLExample-Info.plist */,
 				F7D6D79F178A1477001F2FB0 /* InfoPlist.strings */,
 				F7D6D7A2178A1477001F2FB0 /* main.m */,
@@ -169,6 +183,8 @@
 			files = (
 				F7D6D7A3178A1477001F2FB0 /* main.m in Sources */,
 				F7D6D7AA178A1477001F2FB0 /* GLGAppDelegate.m in Sources */,
+				F7D6D7B7178A14EA001F2FB0 /* GLGOpenGLController.m in Sources */,
+				F7D6D7BA178A1722001F2FB0 /* GLGOpenGLView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
