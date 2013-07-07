@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'Xcode4OpenGLExample' target in the 'Xcode4OpenGLExample' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif
